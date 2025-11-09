@@ -7,9 +7,7 @@ local naughty_notify = function()
 	})
 end
 
--- Check if running in Neovim (avoid errors in other Lua contexts)
 if vim then
-	-- Define keymaps for arrow keys in Normal, Insert, and Visual modes
 	local modes = { "n", "i", "v" }
 	local keys = { "<Up>", "<Down>", "<Left>", "<Right>" }
 
