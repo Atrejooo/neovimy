@@ -42,7 +42,7 @@ Color.new("sel", "#00236d") -- @@txt_sel@@
 Color.new("pale", "#708a9b") -- @@txt_pale@@
 Color.new("bg", "#111121") -- @@dark_main@@
 Color.new("fg", "#47476a") -- @@light_base@@
-Color.new("dark", "#000000") -- @@dark_base@@
+Color.new("dark", "#010003") -- @@dark_base@@
 
 -- normal ui and stuff
 groupy({

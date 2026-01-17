@@ -10,32 +10,30 @@
 --        For example, to see the options for `lua_ls`, you could go to: https://luals.github.io/wiki/settings/
 
 return {
-	-- for godot
-	gdtoolkit = {},
-	csharp_ls = {},
+	-- for rust
+	rust_analyzer = {},
 
-	-- for js/ts
-	deno = {},
-	-- html = {},
-	-- cssls = {},
-	--
+	-- for godot
+	-- csharp_ls = {},
+
 	-- for python
 	ruff = {},
 	pylsp = {},
 
 	-- for typst
-	tinymist = {},
-	typstyle = {},
-
-	-- for tex live
-	-- texlab = {},
-	-- latexindent = {},
+	tinymist = {
+		settings = {
+			formatterMode = "typstyle",
+			exportPdf = "onType",
+			semanticTokens = "disable",
+			formatterProseWrap = true, -- wrap lines in content mode
+			formatterPrintWidth = 80, -- limit line length to 80 if possible
+			formatterIndentSize = 4, -- indentation width
+		},
+	},
 
 	-- for java
-	jdtls = {},
-
-	-- for rust
-	rust_analyzer = {},
+	-- jdtls = {},
 
 	-- ... etc. See `:help lspconfig-all` for a list of all the pre-configured LSPs
 	--
